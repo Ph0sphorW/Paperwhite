@@ -1,4 +1,4 @@
-rootProject.name = "ignite-template-build-logic"
+rootProject.name = "paperwhite-build-logic"
 
 dependencyResolutionManagement {
   repositories {

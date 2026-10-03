@@ -1,0 +1,21 @@
+{
+    "required": true,
+    "minVersion": "0.8.7",
+    "package": "org.icarus.paperwhite",
+    "target": "@env(DEFAULT)",
+    "compatibilityLevel": "JAVA_21",
+    "mixins": [
+        "ai.MixinSecondaryPoiSensor",
+        "commands.MixinCommands",
+        "entity.MixinBee",
+        "entity.MixinPanda",
+        "level.MixinServerLevel",
+        "logger.MixinMinecraftServer",
+        "networking.MixinConnection",
+        "networking.MixinServerboundDebugSubscriptionRequestPacket",
+        "networking.MixinServerConnectionListener",
+        "networking.MixinTickThrottler",
+        "pathfinding.MixinPathFinder",
+        "player.MixinCraftPlayer"
+    ]
+}

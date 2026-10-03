@@ -1,7 +1,7 @@
 {
-  "id": "example",
+  "id": "paperwhite",
   "version": "1.0.0",
   "mixins": [
-    "mixins.example.core.json"
+    "mixins.org.icarus.paperwhite.json"
   ]
 }
