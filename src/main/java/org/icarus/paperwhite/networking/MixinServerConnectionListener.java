@@ -9,8 +9,11 @@ import org.spongepowered.asm.mixin.Unique;
 
 import java.util.List;
 
+/**
+ * Paperwhite - from <a href="https://github.com/PaperMC/Paper/pull/13943/">paper pr 13943</a>
+ */
 @Mixin(ServerConnectionListener.class)
-public class MixinServerConnectionListener {
+public abstract class MixinServerConnectionListener {
     @Shadow
     @Final
     List<Connection> connections;

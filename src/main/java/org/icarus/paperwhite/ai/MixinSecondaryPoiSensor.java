@@ -8,6 +8,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+/**
+ * Paperwhite - perf: villager second poi pathfinding
+ */
 @Mixin(SecondaryPoiSensor.class)
 public abstract class MixinSecondaryPoiSensor {
     @Inject(

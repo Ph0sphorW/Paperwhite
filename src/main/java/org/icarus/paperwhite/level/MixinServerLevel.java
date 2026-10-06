@@ -27,6 +27,9 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import java.util.concurrent.Executor;
 import java.util.function.Function;
 
+/**
+ * Paperwhite - fix bee's incorrect angry reason
+ */
 @Mixin(ServerLevel.class)
 public abstract class MixinServerLevel extends Level implements ServerEntityGetter, WorldGenLevel, ChunkSystemServerLevel, ChunkSystemLevelReader, ChunkTickServerLevel {
 

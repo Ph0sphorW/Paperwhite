@@ -6,8 +6,11 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 
+/**
+ * Paperwhite - fix panda's incorrect angry reason
+ */
 @Mixin(targets = "net.minecraft.world.entity.animal.panda.Panda$PandaHurtByTargetGoal")
-public class MixinPanda {
+public abstract class MixinPanda {
     @ModifyArg(
         method = "alertOther",
         at = @At(

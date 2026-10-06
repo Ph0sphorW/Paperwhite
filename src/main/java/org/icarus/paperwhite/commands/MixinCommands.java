@@ -12,8 +12,11 @@ import java.util.function.UnaryOperator;
 
 import static net.minecraft.util.StringUtil.filterText;
 
+/**
+ * Paperwhite - filter out disallowed Unicode control chars
+ */
 @Mixin(Commands.class)
-public class MixinCommands {
+public abstract class MixinCommands {
     @ModifyArg(
         method = "finishParsing",
         at = @At(

@@ -14,8 +14,10 @@
         "networking.MixinConnection",
         "networking.MixinServerboundDebugSubscriptionRequestPacket",
         "networking.MixinServerConnectionListener",
+        "networking.MixinServerGamePacketListenerImpl",
         "networking.MixinTickThrottler",
         "pathfinding.MixinPathFinder",
-        "player.MixinCraftPlayer"
+        "player.MixinCraftPlayer",
+        "player.MixinPlayerList"
     ]
 }

@@ -13,6 +13,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+/**
+ * Paperwhite - from <a href="https://github.com/PaperMC/Paper/pull/13943/">paper pr 13943</a>
+ */
 @Mixin(Connection.class)
 public abstract class MixinConnection extends SimpleChannelInboundHandler<Packet<?>> {
     @Shadow

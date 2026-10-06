@@ -9,8 +9,11 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+/**
+ * Paperwhite - fix mending works incorrectly on items have "max_damage" DataComponent
+ */
 @Mixin(CraftPlayer.class)
-public class MixinCraftPlayer {
+public abstract class MixinCraftPlayer {
     @ModifyExpressionValue(
         method = "applyMending",
         at = @At(

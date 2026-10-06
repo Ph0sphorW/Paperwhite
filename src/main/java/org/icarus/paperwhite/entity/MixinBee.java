@@ -6,8 +6,11 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 
+/**
+ * Paperwhite - fix bee's incorrect angry reason
+ */
 @Mixin(targets = "net.minecraft.world.entity.animal.bee.Bee$BeeHurtByOtherGoal")
-public class MixinBee {
+public abstract class MixinBee {
     @ModifyArg(
         method = "alertOther",
         at = @At(

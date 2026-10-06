@@ -7,6 +7,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+/**
+ * L.C.B.
+ */
 @Mixin(MinecraftServer.class)
 public abstract class MixinMinecraftServer {
     @Unique

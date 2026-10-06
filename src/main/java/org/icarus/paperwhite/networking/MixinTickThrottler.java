@@ -6,8 +6,11 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+/**
+ * Paperwhite - fix tick throttler worked incorrectly
+ */
 @Mixin(TickThrottler.class)
-public class MixinTickThrottler {
+public abstract class MixinTickThrottler {
     @Inject(
         method = "isIncrementAndUnderThreshold(II)Z",
         at = @At("TAIL"),

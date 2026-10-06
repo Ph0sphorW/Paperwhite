@@ -19,6 +19,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.Set;
 
+/**
+ * Paperwhite - from <a href="https://github.com/PaperMC/Paper/pull/13943/">paper pr 13943</a>
+ */
 @Mixin(ServerboundDebugSubscriptionRequestPacket.class)
 public abstract class MixinServerboundDebugSubscriptionRequestPacket implements Packet<ServerGamePacketListener> {
     @Mutable
@@ -26,9 +29,6 @@ public abstract class MixinServerboundDebugSubscriptionRequestPacket implements 
     @Shadow
     private static StreamCodec<RegistryFriendlyByteBuf, Set<DebugSubscription<?>>> SET_STREAM_CODEC;
 
-    /**
-     * Paperwhite - from <a href="https://github.com/PaperMC/Paper/pull/13943/">paper pr 13943</a>
-     */
     @Inject(
         method = "<clinit>",
         at = @At("TAIL")

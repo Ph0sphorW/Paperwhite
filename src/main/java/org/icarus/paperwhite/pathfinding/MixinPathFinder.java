@@ -9,8 +9,11 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 import java.util.Comparator;
 
+/**
+ * Paperwhite - fix inverted pathfinding
+ */
 @Mixin(PathFinder.class)
-public class MixinPathFinder {
+public abstract class MixinPathFinder {
     @ModifyVariable(
         method = "findPath(Lnet/minecraft/world/level/pathfinder/Node;Ljava/util/List;FIF)Lnet/minecraft/world/level/pathfinder/Path;",
         at = @At("STORE"),
